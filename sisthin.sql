@@ -1,0 +1,1 @@
+SELECT DISTINCT CITY FROM STATION WHERE NOT SUBSTR(CITY,1,1) IN ('A','E','I','O','U','a','e','i','o','u') AND NOT SUBSTR(CITY,LENGTH(CITY),LENGTH(CITY)+1) IN ('A','E','I','O','U','a','e','i','o','u');
